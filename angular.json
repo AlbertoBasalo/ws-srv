@@ -3,5 +3,38 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "lab-srv": {
+      "projectType": "library",
+      "root": "projects/lab-srv",
+      "sourceRoot": "projects/lab-srv/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/lab-srv/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/lab-srv/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/lab-srv/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/lab-srv/tsconfig.spec.json",
+            "polyfills": ["zone.js", "zone.js/testing"]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": false
   }
 }

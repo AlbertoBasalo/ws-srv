@@ -1,12 +1,14 @@
 {
   "name": "ws-srv",
-  "version": "0.0.0",
+  "description": "A library with Angular services (api crud, logger, auth store...) ",
+  "version": "18.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test ",
+    "publish": "npm run build && cd dist/lab-srv && npm link"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +25,7 @@
     "zone.js": "~0.14.3"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^18.0.3",
     "@angular/cli": "^18.0.1",
     "@angular/compiler-cli": "^18.0.0",
     "@types/jasmine": "~5.1.0",
@@ -32,6 +35,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-packagr": "^18.0.0",
     "typescript": "~5.4.2"
   }
 }
