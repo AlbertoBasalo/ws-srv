@@ -15,7 +15,7 @@ export type LogLevel = 'DEBUG' | 'INFO' | 'ERROR';
 export class LoggerService {
   // ToDo: Make environment an injectable token
 
-  #minLogLevel: LogLevel = 'INFO'; //environment.production ? 'INFO' : 'DEBUG';
+  #minLogLevel: LogLevel = 'DEBUG'; //environment.production ? 'INFO' : 'DEBUG';
 
   /**
    * Logs a message with a specific level.
