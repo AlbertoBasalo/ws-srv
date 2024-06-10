@@ -1,5 +1,5 @@
 {
-  "name": "lab-srv",
+  "name": "@lab/srv",
   "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^18.0.0",
