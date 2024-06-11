@@ -1,5 +1,6 @@
 {
   "name": "@lab/srv",
+  "description": "A library with Angular services for the Lab project.",
   "version": "0.0.3",
   "scripts": {
     "release": "standard-version"
